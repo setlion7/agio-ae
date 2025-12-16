@@ -1,0 +1,31 @@
+[g_cuda]
+cudaDevice = 0
+gpu_clock_mhz = 1410
+green_group_size = 4
+green_rt_n_groups = 8
+green_work_n_groups = "max"
+
+mode = "direct"
+n_rt_blocks = "max"
+n_rt_warps = 4
+n_app_blocks = 0
+n_app_warps = 4
+
+[g_io]
+n_queues_per_rtsm = 4 # used when "max" n_queues
+
+n_sq = "max"
+sq_threshold = 2000
+prp_dma_num_pages = 1024
+
+n_wq = "max"
+wq_threshold = 5000
+
+n_stage = 2097152
+
+[nvme]
+num_controllers = 1
+nvme_path = ["/dev/libnvm0"]
+namespace = 1
+queue_depth = 1024
+num_queue_pairs = 32

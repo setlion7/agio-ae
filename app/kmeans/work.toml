@@ -1,0 +1,20 @@
+[work]
+nvme_dev_id = 256
+point_filename = "/export/data/kmeans1"
+point_list_nvme_start_GiB = 64
+prefetch_mult = 1
+num_clusters = 128
+threshold = 0.001
+num_points_per_warp_per_loop = 16
+max_loop = 1000
+
+[cache]
+enable = false
+
+[memalloc]
+enable = true
+alloc_method = 1
+num_mem_parallel = 8
+num_mem_queues = 2
+queue_len = [2000000, 1000000]
+slot_size = [64, 4096]

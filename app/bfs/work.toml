@@ -1,0 +1,19 @@
+[work]
+nvme_dev_id = 256                   # or some large number
+graph_filename = "/export/data/k16"
+nvme_edge_start_GiB = 64
+root = 1
+max_level = 1000
+
+[cache]
+enable = true
+range_mode = 2     # either 1(from start to range_size) or 2(work-provided)
+cache_size_GiB = 1
+
+[memalloc]
+enable = true
+alloc_method = 1
+num_mem_parallel = 8
+num_mem_queues = 6
+queue_len = [600000, 700000, 500000, 80000, 30000, 14000]
+slot_size = [8, 32, 512, 4096, 32768, 131072]

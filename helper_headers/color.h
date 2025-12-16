@@ -1,0 +1,8 @@
+#define CRESET "\x1B[0m"
+#define CRED "\x1B[31m"
+#define CGREEN "\x1B[32m"
+#define CYELLOW "\x1B[33m"
+#define CBLUE "\x1B[34m"
+#define CMAGENTA "\x1B[35m"
+#define CCYAN "\x1B[36m"
+#define CWHITE "\x1B[37m"

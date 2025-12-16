@@ -1,0 +1,6 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+AccessModifierOffset: 0
+PointerAlignment: Right
+ColumnLimit: 0
+SortIncludes: false

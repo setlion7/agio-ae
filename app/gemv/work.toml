@@ -1,0 +1,16 @@
+[work]
+nvme_dev_id = 256
+matrix_filename = "/export/data/mat1"
+matrix_nvme_start_GiB = 64
+num_rows_per_warp_per_loop = 2048
+
+[cache]
+enable = false
+
+[memalloc]
+enable = true
+alloc_method = 1
+num_mem_parallel = 8
+num_mem_queues = 2
+queue_len = [2000000, 30000]
+slot_size = [64, 131072]

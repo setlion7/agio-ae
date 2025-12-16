@@ -1,0 +1,5 @@
+add_library(g_nvme)
+target_sources(g_nvme PRIVATE buffer.cu)
+target_include_directories(g_nvme PRIVATE ../subtree/bam/include/freestanding/include)
+target_include_directories(g_nvme PRIVATE ../subtree/bam/include)
+target_include_directories(g_nvme PRIVATE ../helper_headers)

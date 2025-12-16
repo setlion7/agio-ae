@@ -1,0 +1,4 @@
+Completion:
+  Dismissed:
+    - "HeaderInsertion.*"
+  HeaderInsertion: never

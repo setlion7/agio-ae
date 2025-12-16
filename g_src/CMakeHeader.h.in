@@ -1,0 +1,5 @@
+#pragma once
+
+#define C_PROJ_NAME "@PROJECT_NAME@"
+#define C_BUILD_TYPE "@CMAKE_BUILD_TYPE@"
+#define C_WORK_NAME "@G_APP_SELECT@"
